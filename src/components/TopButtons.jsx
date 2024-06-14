@@ -28,7 +28,7 @@ const TopButtons = () => {
                 cities.map(city => (
                     <button 
                         key={city.id} 
-                        className="text-lg font-medium hover:bg-gray-700/20 px-3 py-2 rounded-md transition ease-in">
+                        className="text-2xl font-medium hover:bg-gray-700/20 px-3 py-2 rounded-md transition ease-in">
                         {city.name}
                     </button>
                 ))
