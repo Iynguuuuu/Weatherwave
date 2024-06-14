@@ -2,7 +2,7 @@ import { FaThermometerEmpty } from "react-icons/fa";
 import { BiSolidDropletHalf } from "react-icons/bi";
 import { FiWind } from "react-icons/fi";
 import { GiSunrise, GiSunset } from "react-icons/gi";
-import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
+
 
 const TempAndDetails = () => {
 
@@ -40,18 +40,7 @@ const TempAndDetails = () => {
             title: "Sunset",
             value: "08:33 PM"
         },
-        {
-            id: 3,
-            Icon: MdKeyboardArrowUp,
-            title: "High",
-            value: "37°",
-        },
-        {
-            id: 4,
-            Icon: MdKeyboardArrowDown,
-            title: "Low",
-            value: "7°",
-        },
+     
     ];
 
     return (
@@ -83,8 +72,8 @@ const TempAndDetails = () => {
                 {
                     horizontalDetails.map(({ id, Icon, title, value }) => (
                         <div key={id} className="flex flex-row items-center">
-                            <Icon size={30} />
-                            <p>{`${title}:`} <span className="font-medium ml-1">{value}</span></p>
+                            <Icon size={30} className="bg-gray-700/20 rounded-md p-[2px]  " />
+                            <p className="font-lightweight mt-1 ml-1 text-[18px]">{`${title}:`} <span className="font-medium ml-1">{value}</span></p>
                         </div>
                     ))
                 }
