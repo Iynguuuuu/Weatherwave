@@ -1,3 +1,4 @@
+import Forecast from "./components/Forecast"
 import TempAndDetails from "./components/TempAndDetails"
 import TimeAndLocation from "./components/TimeAndLocation"
 import TopButtons from "./components/TopButtons"
@@ -11,6 +12,7 @@ const App = () => {
       <Inputs />
       <TimeAndLocation />
       <TempAndDetails/>
+      <Forecast/>
 
     </div>
   )

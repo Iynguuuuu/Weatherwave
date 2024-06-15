@@ -10,7 +10,7 @@ const TempAndDetails = () => {
         {
             id: 1,
             Icon: FaThermometerEmpty,
-            title: "Real Feel",
+            title: "Feels Like",
             value: "22°"
         },
         {
