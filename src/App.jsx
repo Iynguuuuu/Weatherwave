@@ -28,11 +28,15 @@ const App = () => {
   }, [query, units]);
 
   const formatBackGround = () => {
-    if (!weather) return "from-cyan-600 to-blue-700";
-    const threshold = units === 'metric' ? 20 : 60
-    if (weather.temp <= threshold) "from-cyan-600 to-blue-700";
-    return "from-yellow-600 to-orange-700";
-  }
+    if (!weather) return "from-cyan-600 to-blue-700"; 
+    const temp = weather.temp;
+    
+    if (temp >= 0 && temp <= 18) return "from-cyan-600 to-gray-700";
+    if (temp >= 19 && temp <= 25) return "from-cyan-600 to-blue-700";
+    if (temp > 25) return "from-yellow-600 to-orange-700";
+    
+    return "from-cyan-600 to-blue-700";  
+}
 
   return (
     <div
