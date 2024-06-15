@@ -67,7 +67,7 @@ const TempAndDetails = ({ weather }) => {
 
                 <div className="flex flex-col space-y-3 items-start">
                     {verticalDetails.map(({ id, Icon, title, value }) => (
-                        <div key={id} className="flex font-light text-sm items-center justify-center">
+                        <div key={id} className="flex font-light text-lg items-center justify-center">
                             <Icon size={18} className="mr-1" />
                             {`${title}:`} <span className="font-medium ml-1">{value}</span>
                         </div>

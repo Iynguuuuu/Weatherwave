@@ -26,7 +26,7 @@ const inputs = ({ setQuery }) => {
                     onChange={(e) => setCity(e.currentTarget.value)}
                     type="text"
                     placeholder="search by city...."
-                    className="text-gray-500 text-xl font-light p-2 w-full shadow-xl capitalize placeholder:lowercase focus:outline-none" />
+                    className="text-gray-500 text-xl font-light p-2 w-full rounded-md shadow-xl capitalize placeholder:lowercase focus:outline-none" />
 
                 <BiSearch
                     size={30}
