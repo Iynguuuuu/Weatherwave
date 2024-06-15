@@ -65,7 +65,7 @@ const formatForecastWeather = (secs, offset, data) => {
         })).slice(0, 5);
 
     //daily
-    const daily = data.filter((f) => f.dt_txt.slic(-8) === "00:00:00")
+    const daily = data.filter((f) => f.dt_txt.slice(-8) === "00:00:00")
         .map(f => ({
             temp: f.main.temp,
             tile: formatToLocalTime(f.dt, offset, "ccc"),
